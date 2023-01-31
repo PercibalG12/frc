@@ -14,7 +14,7 @@ while True:
     #detect faces 
     face_cordinates=trained_face_data.detectMultiScale(grayscaled_img)
     for (x,y,w,h) in face_cordinates:
-        cv2.rectangle(frame, (x,y),(x+w, y+h), (randrange(128,256),randrange(128,256),randrange(128,256) ), 10)
+        cv2.rectangle(frame, (x,y),(x+w, y+h), (0,255,0), 10)
     cv2.imshow('Clever Programmer Face Detect',frame)
     key = cv2.waitKey(1)
 
